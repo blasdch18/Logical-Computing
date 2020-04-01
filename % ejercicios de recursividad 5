@@ -1,0 +1,3 @@
+% ejercicios de recursividad 5
+
+sumas(X):-write()

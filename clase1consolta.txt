@@ -1,0 +1,190 @@
+For help, use ?- help(Topic). or ?- apropos(Word).
+
+1 ?- estudia(X,fisica).
+X = luis .
+
+2 ?- estudia(X,fisica).
+X = luis .
+
+3 ?- estudia(X,fisica).
+X = luis ;
+X = ada.
+
+4 ?- estudia(X,fisica).
+X = luis ;
+X = ada.
+
+5 ?- estudia(luz,fisica).
+false.
+
+6 ?- estudia(X,X).
+false.
+
+7 ?- estudia(X,Y).
+X = luis,
+Y = fisica ;
+X = juan,
+Y = logica ;
+X = ana,
+Y = algebra ;
+X = ada,
+Y = fisica ;
+X = luis,
+Y = algebra ;
+X = renato,
+Y = ami.
+8 ?- estudia(luis,Y).
+Y = fisica ;
+Y = algebra.
+
+9 ?- estudia(luis , Curso ).
+Curso = fisica ;
+Curso = algebra.
+
+10 ?- estudia(X,algebra).
+X = ana ;
+X = luis.
+
+11 ?- estudia(bool,algebra).
+false.
+
+12 ?- estudia(_,algebra).
+true .
+
+13 ?- estudia(_,algebra).
+true ;
+true.
+
+14 ?- 
+% c:/users/idea¨p/desktop/clase1 compiled 0.00 sec, 7 clauses
+14 ?- 
+|    
+|    
+|    amigo(fabricio,Amigo).
+Amigo = angel ;
+Amigo = renzo.
+
+15 ?- amigo(wilbert,Amigo).
+Amigo = francisco.
+
+16 ?- amigo(Amigo,wilbert).
+Amigo = anibal.
+
+17 ?- 
+Warning: c:/users/idea¨p/desktop/clase1.pl:20:
+        Singleton variable in branch: X
+        Singleton variable in branch: Y
+% c:/users/idea¨p/desktop/clase1 compiled 0.00 sec, 2 clauses
+% c:/users/idea¨p/desktop/clase1 compiled 0.00 sec, 2 clauses
+17 ?- 
+|    amigo(wilbert,Amigo)
+|    amigo(wilbert,Amigo).
+ERROR: Syntax error: Operator expected
+ERROR: amigo(wilbert,Amigo)
+|    amigo(wilbert,Amigo).
+ERROR: Syntax error: Operator expected
+ERROR: amigo(wilbert,Amigo)
+ERROR: ** here **
+ERROR: 
+amigo(wilbert,Amigo) . 
+17 ?- amigo(wilbert,Amigo).
+Amigo = francisco.
+
+18 ?- 
+ERROR: [Thread pce] c:/users/idea¨p/desktop/clase1.pl:16: Syntax error: Operator expected
+% c:/users/idea¨p/desktop/clase1 compiled 0.00 sec, 0 clauses
+18 ?- 
+|    
+ERROR: [Thread pce] c:/users/idea¨p/desktop/clase1.pl:16: Syntax error: Operator expected
+ERROR: [Thread pce] c:/users/idea¨p/desktop/clase1.pl:22: Syntax error: Operator expected
+% c:/users/idea¨p/desktop/clase1 compiled 0.00 sec, 2 clauses
+ERROR: [Thread pce] c:/users/idea¨p/desktop/clase1.pl:16: Syntax error: Operator expected
+% c:/users/idea¨p/desktop/clase1 compiled 0.00 sec, 12 clauses
+% c:/users/idea¨p/desktop/clase1 compiled 0.00 sec, 5 clauses
+|    amigov(fabricio,X)
+|    .
+Correct to: "amigo(fabricio,X)"? 
+Please answer 'y' or 'n'? 
+Please answer 'y' or 'n'? no
+ERROR: residue_vars/2: Undefined procedure: amigov/2
+ERROR:   However, there are definitions for:
+ERROR:         amigo/2
+ERROR:         amigo2/2
+ERROR:         amigosv/2
+   Exception: (7) amigov(fabricio, _G1909) ? no debug
+19 ?- 
+% c:/users/idea¨p/desktop/clase1 compiled 0.02 sec, 3 clauses
+19 ?- amigov(fabricio,X).
+X = angel ;
+X = renzo ;
+false.
+
+20 ?- amigov(wilbert,X).
+X = francisco ;
+X = anibal.
+
+21 ?- amigov(X,fabricio)
+|    .
+X = angel ;
+X = renzo.
+
+22 ?- amigom(Y,X).
+Y = anabel,
+X = yessica ;
+Y = yessica,
+X = anabel ;
+false.
+
+23 ?- amigom(X,Y).
+X = anabel,
+Y = yessica ;
+X = yessica,
+Y = anabel ;
+false.
+
+24 ?- amigov(X,Y).
+X = fabricio,
+Y = angel .
+
+25 ?- amigov(X,Y).
+X = fabricio,
+Y = angel ;
+X = misael,
+Y = renzo ;
+X = wilbert,
+Y = francisco ;
+X = anibal,
+Y = wilbert ;
+X = fabricio,
+Y = renzo ;
+X = angel,
+Y = fabricio ;
+X = renzo,
+Y = misael ;
+X = francisco,
+Y = wilbert ;
+X = wilbert,
+Y = anibal ;
+X = renzo,
+Y = fabricio.
+
+26 ?- amigom(X,Y).
+X = anabel,
+Y = yessica ;
+X = yessica,
+Y = anabel ;
+false.
+
+27 ?- amigom(Y,X).
+Y = anabel,
+X = yessica ;
+Y = yessica,
+X = anabel ;
+false.
+
+28 ?- 
+% c:/users/idea¨p/desktop/clase1 compiled 0.00 sec, 4 clauses
+28 ?- amigom(Y,X).
+Y = anabel,
+X = yessica ;
+Y = yessica,
